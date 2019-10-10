@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>plugin</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <app-botao [nome]="'Botão 1'"></app-botao>
+  <app-botao [nome]="'Botão 1'"></app-botao>
+
+  <button (click)="tirarFoto()">Tirar foto</button>
+  <button (click)="localizacao()">Localização</button>
+
+  <h1>Mapa</h1>
+  <div #googleMaps class="googleMaps"></div>
+
+  <h1>Fotos</h1>
+  <img *ngFor="let foto of base64Image" src="{{foto}}" />
+
+</ion-content>
+

@@ -1,0 +1,7 @@
+{
+  "name": "AppCasaAberta",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
